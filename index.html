@@ -1,35 +1,41 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Моя коллекция</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <header class="header">
-            <h1>Моя коллекция</h1>
-        </header>
 
-        <main class="container">
-            <p id="status" class="status">Загрузка...</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя коллекция</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
 
-            <div id="cards" class="cards">
-                <article class="card">
-                    <img
-                        class="card__image"
-                        src="https://via.placeholder.com/300x200"
-                        alt="Название" />
-                    <div class="card__body">
-                        <h2 class="card__title">Название</h2>
-                        <p class="card__text">Короткое описание записи.</p>
-                        <div class="card__footer">
-                            <span class="card__price">1200 ₽</span>
-                            <span class="badge badge--yes">В наличии</span>
-                        </div>
+<body>
+    <header class="header">
+        <h1>Моя коллекция</h1>
+    </header>
+
+    <main class="container">
+        <p id="status" class="status">Загрузка...</p>
+
+        <div id="cards" class="cards">
+            <article class="card">
+                <img class="card__image" src="https://via.placeholder.com/300x200" alt="Название" />
+                <div class="card__body">
+                    <h2 class="card__title">Название</h2>
+                    <p class="card__country">Страна</p>
+                    <div class="card__extraInfo">
+                        <p class="card__calories">240ккл/100г</p>
+                        <p class="card__cookType">Жарка</p>
                     </div>
-                </article>
-            </div>
-        </main>
-    </body>
+                    <div class="card__footer">
+                        <span class="card__price">1200 ₽</span>
+                        <p class="card__rating rating--8-10">8/10</p>
+                        <span class="card__vegan badge badge--no">Не веганское</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
 </html>
